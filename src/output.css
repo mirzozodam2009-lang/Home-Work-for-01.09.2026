@@ -638,6 +638,9 @@
     .md\:mb-16 {
       margin-bottom: calc(var(--spacing) * 16);
     }
+    .md\:ml-55 {
+      margin-left: calc(var(--spacing) * 55);
+    }
     .md\:ml-75 {
       margin-left: calc(var(--spacing) * 75);
     }
