@@ -282,6 +282,9 @@
   .mb-\[200px\] {
     margin-bottom: 200px;
   }
+  .ml-0 {
+    margin-left: 0px;
+  }
   .flex {
     display: flex;
   }
@@ -296,6 +299,9 @@
   }
   .table {
     display: table;
+  }
+  .h-6 {
+    height: calc(var(--spacing) * 6);
   }
   .h-8 {
     height: calc(var(--spacing) * 8);
@@ -372,8 +378,14 @@
   .justify-center {
     justify-content: center;
   }
+  .gap-1 {
+    gap: var(--spacing);
+  }
   .gap-2 {
     gap: calc(var(--spacing) * 2);
+  }
+  .gap-3 {
+    gap: calc(var(--spacing) * 3);
   }
   .gap-4 {
     gap: calc(var(--spacing) * 4);
@@ -544,6 +556,12 @@
   .pt-6 {
     padding-top: calc(var(--spacing) * 6);
   }
+  .pt-12 {
+    padding-top: calc(var(--spacing) * 12);
+  }
+  .pb-8 {
+    padding-bottom: calc(var(--spacing) * 8);
+  }
   .text-center {
     text-align: center;
   }
@@ -622,6 +640,9 @@
   .text-gray-900 {
     color: var(--color-gray-900);
   }
+  .text-orange-500 {
+    color: var(--color-orange-500);
+  }
   .text-white {
     color: var(--color-white);
   }
@@ -653,6 +674,17 @@
     }
     .hover\:text-black:hover {
       color: var(--color-black);
+    }
+  }
+  @media (width >= 40rem) {
+    .sm\:flex-row {
+      flex-direction: row;
+    }
+    .sm\:gap-6 {
+      gap: calc(var(--spacing) * 6);
+    }
+    .sm\:text-gray-400 {
+      color: var(--color-gray-400);
     }
   }
   @media (width >= 48rem) {
@@ -695,11 +727,17 @@
     .md\:mb-16 {
       margin-bottom: calc(var(--spacing) * 16);
     }
+    .md\:ml-50 {
+      margin-left: calc(var(--spacing) * 50);
+    }
     .md\:ml-55 {
       margin-left: calc(var(--spacing) * 55);
     }
     .md\:ml-75 {
       margin-left: calc(var(--spacing) * 75);
+    }
+    .md\:ml-100 {
+      margin-left: calc(var(--spacing) * 100);
     }
     .md\:block {
       display: block;
@@ -712,6 +750,9 @@
     }
     .md\:hidden {
       display: none;
+    }
+    .md\:h-16 {
+      height: calc(var(--spacing) * 16);
     }
     .md\:h-64 {
       height: calc(var(--spacing) * 64);
@@ -734,6 +775,9 @@
     .md\:flex-row {
       flex-direction: row;
     }
+    .md\:items-center {
+      align-items: center;
+    }
     .md\:items-start {
       align-items: flex-start;
     }
@@ -751,6 +795,9 @@
     }
     .md\:gap-8 {
       gap: calc(var(--spacing) * 8);
+    }
+    .md\:gap-10 {
+      gap: calc(var(--spacing) * 10);
     }
     .md\:bg-gray-50 {
       background-color: var(--color-gray-50);
@@ -772,6 +819,9 @@
     }
     .md\:py-16 {
       padding-block: calc(var(--spacing) * 16);
+    }
+    .md\:pt-20 {
+      padding-top: calc(var(--spacing) * 20);
     }
     .md\:text-left {
       text-align: left;
